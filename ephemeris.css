@@ -1,0 +1,75 @@
+/**
+ * This file is part of The Draconic Ephemeris Generator.
+ *
+ *  The Draconic Ephemeris Generator is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  The Draconic Ephemeris Generator is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with The Draconic Ephemeris Generator.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/**
+ * Fonts
+ */
+@font-face {
+    font-family: "Kairon Semiserif";
+    src: url( "KaironSemiserif.ttf" ) format( 'truetype' );
+}
+body, th span {
+	font-family: Helvetica, sans-serif;
+	font-size: 10px;
+}
+thead tr:not(:first-child) th:not(:first-child), tbody tr td:nth-of-type(4n + 0) {
+	font-family: "Kairon Semiserif";
+	font-size: 12px;
+	padding: 0;
+}
+thead tr:first-child th {
+	font-size: 14px;
+	padding-bottom: 2px;
+}
+tfoot td {
+	font-size: 12px;
+	padding-top: 3px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
+/**
+ * Borders and text alignment
+ */
+thead tr:not(:first-child) th, tbody tr td:first-child, tbody tr td:nth-of-type(4n + 3) {
+	border-left: 1px solid #000;
+	min-width: 12px;
+}
+tbody tr td:first-child, tbody tr td:nth-of-type(4n + 3) {
+	text-align: right;	
+}
+thead tr:not(:first-child) th:last-child, tbody tr td:last-child {
+	border-right: 1px solid #000;
+}
+tbody tr:last-child td, thead th {
+	border-bottom: 1px solid #000;
+	position: relative;
+}
+thead tr:first-child div {
+	position: absolute;
+}
+.recto thead tr:first-child div {
+	right: 1px;
+}
+/**
+ * Layout and padding
+ */
+td {
+	padding: 0 1px;
+}
+.ret {
+	background-color: #ccc;
+}

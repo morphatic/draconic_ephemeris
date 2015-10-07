@@ -1,0 +1,93 @@
+/**
+ * This file is part of The Draconic Ephemeris Generator.
+ *
+ *  The Draconic Ephemeris Generator is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  The Draconic Ephemeris Generator is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with The Draconic Ephemeris Generator.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/**
+ * Fonts
+ */
+@font-face {
+    font-family: "Kairon Semiserif";
+    src: url( "KaironSemiserif.ttf" ) format( 'truetype' );
+}
+body, th span {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 6pt;
+	font-weight: bold;
+}
+thead tr:not(:first-child) th:not(:first-child), tbody tr td:nth-of-type(4n + 0) {
+	font-family: "Kairon Semiserif";
+	font-size: 7pt;
+	font-weight: normal;
+	padding: 0;
+}
+thead tr:not(:first-child) th:not(:first-child) {
+	font-size: 10pt;
+	padding: 1pt 0;
+}
+thead tr:first-child th {
+	font-size: 11pt;
+	padding-bottom: 1pt;
+}
+tfoot td {
+	font-size: 10pt;
+	padding-top: 2pt;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
+/**
+ * Borders and text alignment
+ */
+table {
+	table-layout: fixed;
+	width: 6.25in;
+}
+thead tr:not(:first-child) th, tbody tr td:first-child, tbody tr td:nth-of-type(4n + 3) {
+	border-left: 1pt solid #000;
+}
+tbody tr td:first-child, tbody tr td:nth-of-type(4n + 3) {
+	text-align: right;	
+}
+tbody tr td:nth-of-type(4n + 0) {
+	text-align: center;
+}
+thead tr:not(:first-child) th:last-child, tbody tr td:last-child {
+	border-right: 1pt solid #000;
+}
+tbody tr:last-child td, thead th {
+	border-bottom: 1pt solid #000;
+	position: relative;
+}
+thead tr:first-child div {
+	position: absolute;
+}
+.recto thead tr:first-child div {
+	right: 1pt;
+}
+/**
+ * Layout and padding
+ */
+td   { padding: 0 1pt; }
+.ret { background-color: #ccc; -webkit-print-color-adjust: exact; }
+.lower {
+	page-break-after: always;
+	margin-top: 0.25in;
+}
+.verso {
+	margin-right: 0.5in;
+}
+.recto {
+	margin-left: 0.5in;
+}
